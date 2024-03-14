@@ -1,4 +1,4 @@
-# Factorial in a non recursive way
+# Factorial in a non-recursive way
 
 n = 7
 fact = 1
@@ -11,11 +11,32 @@ print(fact)
 # -----------------------------------.
 
 # Factorial in a recursive way
-def factorial(n):
-    if n < 1:
+
+
+def factorial(nu):
+    if nu < 1:
         return 1
     else:
-        number = n * factorial(n-1)
+        number = nu * factorial(nu-1)
         return number
 
+
 print(factorial(7))
+
+# ----------------------------------------
+
+# fibonacci series
+
+
+def fibonacci(num):
+    a, b = 0, 1
+    for x in range(num):
+        a, b = b, a+b
+    return a
+
+
+print(fibonacci(4))
+
+
+# fibonacci in a recursive way
+
