@@ -35,8 +35,17 @@ def fibonacci(num):
     return a
 
 
-print(fibonacci(4))
+print(fibonacci(1000))
 
 
 # fibonacci in a recursive way
 
+
+def fibonacci_2(n2):
+    if n2 <= 1:
+        return n2
+    else:
+        return fibonacci_2(n2-1) + fibonacci_2(n2-2)
+
+
+print(fibonacci_2(1000))
